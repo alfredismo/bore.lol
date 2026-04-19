@@ -3,35 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | </title>
+    <title>{{ page.title }} | bore.lol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Outfit:wght@400;600&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: #000; color: #fff; font-family: 'Arial Black', sans-serif; padding: 30px 40px; min-height: 100vh; }
-        a { color: #00ff00; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .logo { font-size: 4rem; font-weight: 900; color: #00ff00; margin-bottom: 20px; }
-        nav { margin-bottom: 30px; display: flex; gap: 20px; flex-wrap: wrap; }
-        nav a { color: #ccc; font-size: 1rem; }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Outfit', sans-serif;
+            padding: 40px 44px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* LOGO */
+        .logo a {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 5rem;
+            font-weight: 700;
+            color: #00ff00;
+            text-decoration: none;
+            line-height: 1;
+            display: block;
+            margin-bottom: 24px;
+        }
+
+        /* MENU VERTICAL */
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
         nav a:hover { color: #00ff00; }
-        .content { max-width: 700px; line-height: 1.7; }
-        footer { margin-top: 60px; color: #444; font-size: 0.8rem; }
+
+        /* CONTENIDO */
+        .content {
+            max-width: 680px;
+            line-height: 1.8;
+            flex: 1;
+        }
+
+        /* TITULOS DE POST */
+        h1, h2, h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: #00ff00;
+            margin: 28px 0 12px;
+        }
+
+        /* CUERPO DE TEXTO */
+        p, li {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            color: #ddd;
+            margin-bottom: 14px;
+        }
+
+        /* CÓDIGO */
+        code, pre {
+            font-family: 'IBM Plex Mono', monospace;
+            background: #111;
+            color: #00ff00;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.9rem;
+        }
+
+        a { color: #00ff00; }
+        a:hover { text-decoration: underline; }
+
+        /* FOOTER */
+        footer {
+            margin-top: 60px;
+            color: #333;
+            font-size: 0.8rem;
+            font-family: 'IBM Plex Mono', monospace;
+        }
     </style>
 </head>
 <body>
-    <div class="logo"><a href="/" style="color:#00ff00">bore</a></div>
+    <div class="logo"><a href="/">bore</a></div>
+
     <nav>
-    <a href="/">Inicio</a>
-    <a href="/posts">Posts</a>
-    <a href="#">About</a>
-    <a href="https://x.com/boreuno">X</a>
-    <a href="https://instagram.com/boreuno">Instagram</a>
-    <a href="https://puromexa.tumblr.com">Meme Museum</a>
-    <a href="http://djchedraui.bandcamp.com">Music</a>
-    <a href="http://boreone.tumblr.com">Design</a>
+        <a href="/">Inicio</a>
+        <a href="/posts">Posts</a>
+        <a href="/about">About</a>
+        <a href="https://x.com/TU_USUARIO">X</a>
+        <a href="https://instagram.com/TU_USUARIO">Instagram</a>
+        <a href="/meme-museum">Meme Museum</a>
+        <a href="/meme-ilustrado">Meme Ilustrado</a>
+        <a href="/music">Music</a>
+        <a href="/design">Design</a>
     </nav>
+
     <div class="content">
         {{ content }}
     </div>
-    <footer>Memeismo</footer>
+
+    <footer>Memeism. — bore.lol</footer>
 </body>
 </html>
