@@ -1,10 +1,4 @@
-[2026-04-19-memeleaks.md](https://github.com/user-attachments/files/26876552/2026-04-19-memeleaks.md)
-
----
-layout: post
 title: "Memeleaks: Arqueología de una Operación Narrativa (2019–2026)"
-date: 2026-04-19
-categories: blog
 ---
 
 *Cuando le pedí a una IA que mintiera por mí antes de que mentir con IA fuera tendencia.*
