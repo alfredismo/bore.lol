@@ -9,7 +9,7 @@ En 2019, mientras el mundo debatía si las fake news eran un problema de alfabet
 
 Así nació **Memeleaks**.
 
-![Guarromantic 1984](../assets/img/Guarromantic1984.jpg)
+<img src="/assets/img/Guarromantic1984.jpg" alt="Guarromantic 1984" style="max-width:100%;display:block;margin:1.5rem auto;">
 
 ---
 
@@ -21,7 +21,7 @@ La dinámica era fascinante: le dabas un prompt semilla —un titular, una premi
 
 El resultado: noticias que nadie había escrito, sobre eventos que nunca ocurrieron, firmadas por fuentes que no existían. Publicadas aquí, en este blog, con absoluta frialdad editorial.
 
-![Wojak Meme Markets](../assets/img/wojakmeme.jpg)
+<img src="/assets/img/wojakmeme.jpg" alt="Wojak Meme Markets" style="max-width:100%;display:block;margin:1.5rem auto;">
 
 ---
 
@@ -31,7 +31,7 @@ El proyecto no era solo tecnológico. Era un experimento sobre control narrativo
 
 La pregunta central era: **¿qué hace que una narrativa falsa se sienta verdadera?** No la calidad de la escritura. No los datos. Sino la *forma*. El encuadre. El tono de voz institucional. GPT-2 era torpe, pero ya entendía la forma. Y la forma, en la era del scroll infinito, es prácticamente todo.
 
-![Trump Tweet sobre memetic warfare](../assets/img/trumptweet.jpg)
+<img src="/assets/img/trumptweet.jpg" alt="Trump Tweet" style="max-width:100%;display:block;margin:1.5rem auto;">
 
 Memeleaks era una autopsia en tiempo real del ecosistema de información: si lograbas que algo pareciera una filtración, la mente del lector completaba el resto. **El meme no es el contenido, es el vector.**
 
@@ -41,7 +41,8 @@ Memeleaks era una autopsia en tiempo real del ecosistema de información: si log
 
 Todo sistema de desinformación tiene un operador. Alguien que sabe que es ficción y la distribuye con frialdad. La figura del ex-agente que filtra documentos, el insider anónimo, el bot con cara humana.
 
-![Ex agente operación narrativa](../assets/img/exagente.jpg)
+
+<img src="/assets/img/exagente.jpg" alt="Ex Agente" style="max-width:100%;display:block;margin:1.5rem auto;">
 
 Memeleaks ponía esa figura en escena —deliberadamente, auto-conscientemente— como crítica y como demostración simultánea. El medium era el mensaje. El operador era el mensaje.
 
@@ -51,7 +52,7 @@ Memeleaks ponía esa figura en escena —deliberadamente, auto-conscientemente�
 
 No hacen falta recursos estatales para montar una operación narrativa. Hacen falta pantallas, tiempo, y comprensión del ecosistema.
 
-![Infraestructura de granja de contenido](/..assets/img/imagenesreales.jpg)
+<img src="/assets/img/imagenesreales.jpg" alt="Imágenes Reales" style="max-width:100%;display:block;margin:1.5rem auto;">
 
 Lo que en 2019 requería conocimiento técnico y paciencia para manejar el output errático de GPT-2, hoy es infraestructura disponible para cualquiera. Eso no es progreso neutro.
 
