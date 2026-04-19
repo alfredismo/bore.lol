@@ -15,59 +15,66 @@
             color: #fff;
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
         }
 
         .wrapper {
             width: 100%;
             max-width: 680px;
-            padding: 40px 24px;
+            padding: 60px 24px 40px;
             display: flex;
             flex-direction: column;
-            flex: 1;
         }
 
-        /* LOGO */
-        .logo a {
+        /* LOGO TEXTO - se oculta si hay PNG */
+        .logo-text a {
             font-family: 'Jacquarda Bastarda 9', serif;
-            font-size: 5.5rem;
+            font-size: 16rem;
             color: #00ff00;
             text-decoration: none;
-            line-height: 1;
+            line-height: 0.9;
             display: block;
-            margin-bottom: 20px;
+            margin-bottom: 28px;
         }
+
+        /* LOGO PNG - descomentar cuando tengas el archivo */
+        /*
+        .logo-img {
+            margin-bottom: 28px;
+        }
+        .logo-img img {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+        }
+        */
 
         /* MENÚ VERTICAL */
         nav {
             display: flex;
             flex-direction: column;
-            gap: 1px;
+            gap: 0px;
             margin-bottom: 40px;
         }
 
         nav a {
             font-family: 'Special Gothic Expanded One', sans-serif;
-            font-size: 1.4rem;
+            font-size: 2.8rem;
             color: #ccc;
             text-decoration: none;
-            line-height: 1.35;
+            line-height: 1.25;
             transition: color 0.15s;
         }
 
         nav a:hover { color: #00ff00; }
 
         /* CONTENIDO */
-        .content {
-            width: 100%;
-            flex: 1;
-        }
+        .content { width: 100%; flex: 1; }
 
-        /* TÍTULO DE POST */
+        /* TÍTULO POST */
         h1 {
             font-family: 'Oswald', sans-serif;
-            font-size: 2.4rem;
+            font-size: 2.6rem;
             font-weight: 600;
             color: #00ff00;
             text-transform: uppercase;
@@ -80,11 +87,10 @@
             font-family: 'Oswald', sans-serif;
             color: #00ff00;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
             margin: 28px 0 10px;
         }
 
-        /* CUERPO DE POST */
+        /* CUERPO */
         p, li {
             font-family: 'Playfair Display', serif;
             font-size: 1.05rem;
@@ -100,21 +106,17 @@
             border-left: 3px solid #00ff00;
             padding-left: 18px;
             margin: 20px 0;
-            font-size: 1.1rem;
             line-height: 1.8;
         }
 
-        /* FECHA */
         .post-date {
             font-family: 'Special Gothic Expanded One', sans-serif;
             color: #444;
             font-size: 0.8rem;
             margin-bottom: 30px;
             display: block;
-            letter-spacing: 1px;
         }
 
-        /* CÓDIGO */
         code, pre {
             font-family: 'Courier New', monospace;
             background: #0a0a0a;
@@ -127,28 +129,33 @@
         a { color: #00ff00; }
         a:hover { text-decoration: underline; }
 
-        /* FOOTER */
         footer {
             margin-top: 60px;
             color: #333;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-family: 'Special Gothic Expanded One', sans-serif;
             letter-spacing: 2px;
-            text-align: center;
-            padding-bottom: 20px;
         }
 
-        /* RESPONSIVE */
         @media (max-width: 600px) {
-            .logo a { font-size: 4rem; }
-            nav a { font-size: 1.2rem; }
+            .logo-text a { font-size: 8rem; }
+            nav a { font-size: 1.8rem; }
             h1 { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
-        <div class="logo"><a href="/">bore</a></div>
+
+        <!-- LOGO TEXTO (quitar cuando tengas PNG) -->
+        <div class="logo-text"><a href="/">bore</a></div>
+
+        <!-- LOGO PNG (descomentar y subir logo.png al repo) -->
+        <!--
+        <div class="logo-img">
+            <a href="/"><img src="/logo.png" alt="bore.lol"></a>
+        </div>
+        -->
 
         <nav>
             <a href="/">Inicio</a>
@@ -166,6 +173,7 @@
         </div>
 
         <footer>Memeism. — bore.lol</footer>
+
     </div>
 </body>
 </html>
