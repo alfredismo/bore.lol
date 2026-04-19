@@ -26,7 +26,7 @@
             flex-direction: column;
         }
 
-        /* LOGO TITULO */
+        /* LOGO TEXTO - se oculta si hay PNG */
         .logo-text a {
             font-family: 'Jacquarda Bastarda 9', serif;
             font-size: 16rem;
@@ -37,12 +37,24 @@
             margin-bottom: 28px;
         }
 
+        /* LOGO PNG - descomentar cuando tengas el archivo */
+        /*
+        .logo-img {
+            margin-bottom: 28px;
+        }
+        .logo-img img {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+        }
+        */
+
         /* MENÚ VERTICAL */
         nav {
             display: flex;
             flex-direction: column;
             gap: 0px;
-            margin-bottom: 48px;
+            margin-bottom: 40px;
         }
 
         nav a {
@@ -55,19 +67,6 @@
         }
 
         nav a:hover { color: #00ff00; }
-
-        /* LOGO PNG abajo del menu */
-        .logo-brand {
-            margin-bottom: 40px;
-        }
-
-        .logo-brand img {
-            max-width: 200px;
-            width: 100%;
-            height: auto;
-            /* invierte colores para fondo negro: blanco sobre negro */
-            
-        }
 
         /* CONTENIDO */
         .content { width: 100%; flex: 1; }
@@ -91,6 +90,7 @@
             margin: 28px 0 10px;
         }
 
+        /* CUERPO */
         p, li {
             font-family: 'Playfair Display', serif;
             font-size: 1.05rem;
@@ -141,17 +141,22 @@
             .logo-text a { font-size: 8rem; }
             nav a { font-size: 1.8rem; }
             h1 { font-size: 1.8rem; }
-            .logo-brand img { max-width: 150px; }
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
 
-        <!-- TÍTULO BORE -->
+        <!-- LOGO TEXTO (quitar cuando tengas PNG) -->
         <div class="logo-text"><a href="/">bore</a></div>
 
-        <!-- MENÚ -->
+        <!-- LOGO PNG (descomentar y subir logo.png al repo) -->
+        <!--
+        <div class="logo-img">
+            <a href="/"><img src="/logo.png" alt="bore.lol"></a>
+        </div>
+        -->
+
         <nav>
             <a href="/">Inicio</a>
             <a href="/about">About</a>
@@ -163,12 +168,6 @@
             <a href="/design">Design</a>
         </nav>
 
-        <!-- LOGO BORESTOCK PNG -->
-        <div class="logo-brand">
-            <a href="/"><img src="/borestock.webp" alt="borestock logo"></a>
-        </div>
-
-        <!-- CONTENIDO DE CADA PÁGINA -->
         <div class="content">
             {{ content }}
         </div>
