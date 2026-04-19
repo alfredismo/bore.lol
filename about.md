@@ -1,7 +1,7 @@
 <article>
 
 <h1>Sobre mí</h1>
-<span class="post-date">Alfredo Hernández · @boreuno · Xalapa, Veracruz</span>
+<span class="post-date">Alfredo Hernández · @boreuno · Xalapa </span>
 
 <p>
 Hola. Soy Alfredo, aunque en internet me conocen como <strong>BORE</strong>.
@@ -13,7 +13,7 @@ y los convierte en obra.
 <p>
 Mi trabajo vive en la intersección del diseño, comunicación, entre narrativa, tecnología y memoria colectiva.
 Dicho en simple: estudio cómo las ideas se mueven, mutan y sobreviven en internet,
-y lo hago a través del meme, el diseño, la blockchain y la música. 
+y lo hago a través del meme, el diseño, arte digital, blockchain y la música. En esta página encontrarás mis proyectos actuales.  
 </p>
 
 
@@ -35,6 +35,7 @@ Estoy en <a href="https://x.com/boreuno">X / Twitter</a> e
 <a href="https://instagram.com/boreuno">Instagram</a> como <strong>@boreuno</strong>.
 Mi archivo en blockchain en Tezos, con presencia exploradora también en
 Ethereum, Bitcoin y Solana.
+email: alfredismo@proton.me  
 </p>
 
 <blockquote>
