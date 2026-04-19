@@ -1,4 +1,4 @@
-title: "Memeleaks: Arqueología de una Operación Narrativa (2019–2026)"
+"Memeleaks: Arqueología de una Operación Narrativa (2019–2026)"
 ---
 
 *Cuando le pedí a una IA que mintiera por mí antes de que mentir con IA fuera tendencia.*
