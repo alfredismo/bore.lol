@@ -1,9 +1,3 @@
-[about.md](https://github.com/user-attachments/files/26875743/about.md)
----
-layout: default
-title: About
----
-
 <article>
 
 <h1>Sobre mí</h1>
