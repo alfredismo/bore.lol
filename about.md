@@ -16,9 +16,6 @@ Dicho en simple: estudio cómo las ideas se mueven, mutan y sobreviven en intern
 y lo hago a través del meme, el diseño, arte digital, blockchain y la música. En esta página encontrarás mis proyectos actuales.  
 </p>
 
-
-</p>
-
 <p>
 
 Experimentando con las nuevas tecnologías Desde GPT-2 hasta los modelos actuales, he seguido de cerca el desarrollo
@@ -31,11 +28,12 @@ del proceso.
 <h2>Dónde encontrarme</h2>
 
 <p>
-Estoy en <a href="https://x.com/boreuno">X / Twitter</a> e
-<a href="https://instagram.com/boreuno">Instagram</a> como <strong>@boreuno</strong>.
-Mi archivo en blockchain en Tezos, con presencia exploradora también en
+Estoy en Internet como <strong>@boreuno</strong> <a href="https://x.com/boreuno">X / Twitter</a> e
+<a href="https://instagram.com/boreuno">Instagram</a>.
+Explorando siempre nuevas plataformas y documentando, mi archivo en blockchain en Tezos, con presencia también en
 Ethereum, Bitcoin y Solana.
-email: alfredismo@proton.me  
+  
+E-Mail: <strong>alfredismo@proton.me</strong>  
 </p>
 
 <blockquote>
