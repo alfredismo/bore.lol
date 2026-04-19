@@ -1,0 +1,15 @@
+---
+layout: default
+title: Blog
+---
+
+<h1 style="font-family:'Oswald',sans-serif;color:#00ff00;text-transform:uppercase;margin-bottom:28px;">Blog</h1>
+
+<ul style="list-style:none;display:flex;flex-direction:column;gap:20px;">
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}" style="font-family:'Special Gothic Expanded One',sans-serif;color:#ccc;font-size:1.4rem;text-decoration:none;line-height:1.2;display:block;">{{ post.title }}</a>
+    <span style="font-family:'Special Gothic Expanded One',sans-serif;color:#444;font-size:0.75rem;letter-spacing:1px;">{{ post.date | date: "%d %b %Y" }}</span>
+  </li>
+{% endfor %}
+</ul>
