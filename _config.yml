@@ -1,0 +1,17 @@
+title: bore.lol
+description: Memeism.
+url: "https://bore.lol"
+baseurl: ""
+theme: null
+permalink: /:categories/:title/
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
