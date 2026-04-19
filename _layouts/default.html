@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>bore.lol</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Special+Gothic+Expanded+One&family=Oswald:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
             flex-direction: column;
         }
 
-        /* LOGO TEXTO - se oculta si hay PNG */
+        /* LOGO TITULO */
         .logo-text a {
             font-family: 'Jacquarda Bastarda 9', serif;
             font-size: 16rem;
@@ -37,24 +37,12 @@
             margin-bottom: 28px;
         }
 
-        /* LOGO PNG - descomentar cuando tengas el archivo */
-        /*
-        .logo-img {
-            margin-bottom: 28px;
-        }
-        .logo-img img {
-            max-width: 320px;
-            width: 100%;
-            height: auto;
-        }
-        */
-
         /* MENÚ VERTICAL */
         nav {
             display: flex;
             flex-direction: column;
             gap: 0px;
-            margin-bottom: 40px;
+            margin-bottom: 48px;
         }
 
         nav a {
@@ -67,6 +55,19 @@
         }
 
         nav a:hover { color: #00ff00; }
+
+        /* LOGO PNG abajo del menu */
+        .logo-brand {
+            margin-bottom: 40px;
+        }
+
+        .logo-brand img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            /* invierte colores para fondo negro: blanco sobre negro */
+            filter: invert(1) brightness(0.85);
+        }
 
         /* CONTENIDO */
         .content { width: 100%; flex: 1; }
@@ -90,7 +91,6 @@
             margin: 28px 0 10px;
         }
 
-        /* CUERPO */
         p, li {
             font-family: 'Playfair Display', serif;
             font-size: 1.05rem;
@@ -141,22 +141,17 @@
             .logo-text a { font-size: 8rem; }
             nav a { font-size: 1.8rem; }
             h1 { font-size: 1.8rem; }
+            .logo-brand img { max-width: 150px; }
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
 
-        <!-- LOGO TEXTO (quitar cuando tengas PNG) -->
+        <!-- TÍTULO BORE -->
         <div class="logo-text"><a href="/">bore</a></div>
 
-        <!-- LOGO PNG (descomentar y subir logo.png al repo) -->
-        <!--
-        <div class="logo-img">
-            <a href="/"><img src="/logo.png" alt="bore.lol"></a>
-        </div>
-        -->
-
+        <!-- MENÚ -->
         <nav>
             <a href="/">Inicio</a>
             <a href="/about">About</a>
@@ -168,6 +163,12 @@
             <a href="/design">Design</a>
         </nav>
 
+        <!-- LOGO BORESTOCK PNG -->
+        <div class="logo-brand">
+            <a href="/"><img src="/borestock.jpg" alt="borestock logo"></a>
+        </div>
+
+        <!-- CONTENIDO DE CADA PÁGINA -->
         <div class="content">
             {{ content }}
         </div>
