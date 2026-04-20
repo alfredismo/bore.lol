@@ -4,7 +4,6 @@ title: "KnowYourMeme: \"nenecabezon69\" y como los Trolls de Internet tienen la 
 date: 2021-05-10 00:00:00 -0600
 ---
 
-# KnowYourMeme: "nenecabezon69" y como los Trolls de Internet tienen la narrativa
 <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*Dz8CxKuyJ0C6e8vXxW1bSg.jpeg" alt="Guarromantic 1984" style="max-width:100%;display:block;margin:1.5rem auto;">
 
 > "Engáñame una vez y es tu culpa, Engáñame dos veces y es culpa mía"
