@@ -4,87 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} – {{ site.title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      background: #0a0a0a;
-      font-family: sans-serif;
-      color: #eee;
-    }
-    header {
-      padding: 2rem;
+    body { margin: 0; background: #0a0a0a; font-family: sans-serif; color: #eee; }
+    .site-header {
+      padding: 1.5rem 2rem 0.5rem;
       text-align: center;
-      font-size: 1.4rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
+    }
+    .site-header a {
+      font-family: 'Jacquard 12', cursive;
+      font-size: 2.2rem;
       color: #39ff14;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      transition: opacity 0.2s;
     }
-    .masonry {
-      columns: 3 280px;
-      column-gap: 0.75rem;
-      padding: 1rem 2rem 4rem;
+    .site-header a:hover { opacity: 0.7; }
+    header.page-title {
+      padding: 0.5rem 2rem 1.5rem;
+      text-align: center;
+      font-size: 1rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #666;
     }
-    .masonry img {
-      width: 100%;
-      display: block;
-      margin-bottom: 0.75rem;
-      border-radius: 3px;
-      cursor: pointer;
-      transition: opacity 0.2s ease, transform 0.2s ease;
-    }
-    .masonry img:hover {
-      opacity: 0.85;
-      transform: scale(1.02);
-    }
-    /* Lightbox */
-    #lightbox {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.92);
-      z-index: 999;
-      align-items: center;
-      justify-content: center;
-    }
-    #lightbox.active {
-      display: flex;
-    }
-    #lightbox img {
-      max-width: 90vw;
-      max-height: 90vh;
-      border-radius: 4px;
-      box-shadow: 0 0 40px rgba(57,255,20,0.2);
-    }
-    #lightbox-close {
-      position: fixed;
-      top: 1.2rem;
-      right: 1.5rem;
-      font-size: 2rem;
-      cursor: pointer;
-      color: #fff;
-      line-height: 1;
-    }
-    #lightbox-prev, #lightbox-next {
-      position: fixed;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 2.5rem;
-      cursor: pointer;
-      color: #fff;
-      user-select: none;
-      padding: 0.5rem 1rem;
-      background: rgba(255,255,255,0.05);
-      border-radius: 4px;
-    }
+    .masonry { columns: 3 280px; column-gap: 0.75rem; padding: 0 2rem 4rem; }
+    .masonry img { width: 100%; display: block; margin-bottom: 0.75rem; border-radius: 3px; cursor: pointer; transition: opacity 0.2s, transform 0.2s; }
+    .masonry img:hover { opacity: 0.85; transform: scale(1.02); }
+    #lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 999; align-items: center; justify-content: center; }
+    #lightbox.active { display: flex; }
+    #lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 4px; box-shadow: 0 0 40px rgba(57,255,20,0.15); }
+    #lightbox-close { position: fixed; top: 1.2rem; right: 1.5rem; font-size: 2rem; cursor: pointer; color: #fff; }
+    #lightbox-prev, #lightbox-next { position: fixed; top: 50%; transform: translateY(-50%); font-size: 2.5rem; cursor: pointer; color: #fff; padding: 0.5rem 1rem; background: rgba(255,255,255,0.05); border-radius: 4px; }
     #lightbox-prev { left: 1rem; }
     #lightbox-next { right: 1rem; }
   </style>
 </head>
 <body>
 
-<header>{{ page.title }}</header>
+<div class="site-header">
+  <a href="/">BORE</a>
+</div>
+<header class="page-title">Design</header>
 
 <div class="masonry" id="gallery">
+  <!-- Tus 33 imágenes aquí -->
   <img src="/assets/design/img1.jpg" alt="Work 1">
   <img src="/assets/design/img2.jpg" alt="Work 2">
   <img src="/assets/design/img3.jpg" alt="Work 3">
@@ -101,10 +65,8 @@
   <img src="/assets/design/img14.jpg" alt="Work 14">
   <img src="/assets/design/img15.jpg" alt="Work 15">
   <img src="/assets/design/img16.jpg" alt="Work 16">
-  <!-- Añade aquí las 33 imágenes con sus nombres reales -->
 </div>
 
-<!-- Lightbox -->
 <div id="lightbox">
   <span id="lightbox-close">✕</span>
   <span id="lightbox-prev">‹</span>
@@ -117,16 +79,10 @@
   const lb = document.getElementById('lightbox');
   const lbImg = document.getElementById('lightbox-img');
   let current = 0;
-
-  function open(i) {
-    current = i;
-    lbImg.src = imgs[i].src;
-    lb.classList.add('active');
-  }
+  function open(i) { current = i; lbImg.src = imgs[i].src; lb.classList.add('active'); }
   function close() { lb.classList.remove('active'); }
   function prev() { open((current - 1 + imgs.length) % imgs.length); }
   function next() { open((current + 1) % imgs.length); }
-
   imgs.forEach((img, i) => img.addEventListener('click', () => open(i)));
   document.getElementById('lightbox-close').addEventListener('click', close);
   document.getElementById('lightbox-prev').addEventListener('click', prev);
@@ -138,6 +94,5 @@
     if (e.key === 'ArrowRight') next();
   });
 </script>
-
 </body>
 </html>
