@@ -6,7 +6,7 @@ date: 2021-04-25 16:50:00 -0600
 
 # Activa el poder del Meme
 
-<img src="https://cdn-images-1.medium.com/max/800/1SVS9QtbGARWRwKTwgtyj7Q.jpeg" alt="Meme Combo por Alfredo Hernández via PUROMEXA Museo Digital" style="max-width:100%;display:block;margin:1.5rem auto;">
+<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*SVS9QtbGARWRwKTwgtyj7Q.jpeg" alt="Meme Combo por Alfredo Hernández via PUROMEXA Museo Digital" style="max-width:100%;display:block;margin:1.5rem auto;">
 
 Pero antes para ti, ¿Qué es un Meme?
 
