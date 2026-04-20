@@ -3,74 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music – bore.lol</title>
+  <title>{{ page.title }} – {{ site.title }}</title>
   <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
   <style>
     body { margin: 0; background: #0a0a0a; font-family: sans-serif; color: #eee; }
-    header { padding: 2rem; text-align: center; }
-    .site-title { font-family: 'Press Start 2P', monospace; font-size: 1.6rem; color: #39ff14; text-decoration: none; }
-    .site-title:hover { color: #fff; }
-    .page-title { font-size: 0.8rem; letter-spacing: 0.35em; color: #666; text-transform: uppercase; margin-top: 0.5rem; }
-    .masonry-music { columns: 3 300px; column-gap: 1rem; padding: 1rem 2rem 4rem; }
+    .site-header { padding: 1.5rem 2rem 0.5rem; text-align: center; }
+    .site-header a {
+      font-family: 'Jacquard 12', cursive;
+      font-size: 2.2rem;
+      color: #39ff14;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      transition: opacity 0.2s;
+    }
+    .site-header a:hover { opacity: 0.7; }
+    header.page-title { padding: 0.5rem 2rem 1.5rem; text-align: center; font-size: 1rem; letter-spacing: 0.3em; text-transform: uppercase; color: #666; }
+    .masonry-music { columns: 3 300px; column-gap: 1rem; padding: 0 2rem 4rem; }
     .release { break-inside: avoid; margin-bottom: 1rem; border-radius: 4px; overflow: hidden; background: #111; }
     .release iframe { width: 100%; display: block; border: none; }
-    .platform-label { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
-      padding: 0.4rem 0.75rem; color: #555; }
   </style>
 </head>
 <body>
 
-<header>
-  <a href="/" class="site-title">BORE</a>
-  <div class="page-title">Music</div>
-</header>
+<div class="site-header">
+  <a href="/">BORE</a>
+</div>
+<header class="page-title">Music</header>
 
 <div class="masonry-music">
 
-  <!-- SOUNDCLOUD — tracks principales -->
+  <!-- BANDCAMP — pega aquí cada embed de djchedraui.bandcamp.com -->
   <div class="release">
-    <div class="platform-label">Soundcloud</div>
-    <iframe height="300" scrolling="no"
-      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/djchedraui/se-presume-inocente&color=%2339ff14&auto_play=false&hide_related=true&show_comments=false&show_user=true&visual=true"
-      allow="autoplay">
-    </iframe>
-  </div>
-
-  <div class="release">
-    <div class="platform-label">Soundcloud</div>
-    <iframe height="300" scrolling="no"
-      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/djchedraui/baile-acelerado&color=%2339ff14&auto_play=false&hide_related=true&show_comments=false&show_user=true&visual=true"
-      allow="autoplay">
-    </iframe>
-  </div>
-
-  <div class="release">
-    <div class="platform-label">Soundcloud</div>
-    <iframe height="300" scrolling="no"
-      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/djchedraui/quarzo&color=%2339ff14&auto_play=false&hide_related=true&show_comments=false&show_user=true&visual=true"
-      allow="autoplay">
-    </iframe>
-  </div>
-
-  <div class="release">
-    <div class="platform-label">Soundcloud</div>
-    <iframe height="300" scrolling="no"
-      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/djchedraui/rey-de-la-mota&color=%2339ff14&auto_play=false&hide_related=true&show_comments=false&show_user=true&visual=true"
-      allow="autoplay">
-    </iframe>
-  </div>
-
-  <!-- BANDCAMP — agrega tus albums aquí -->
-  <!-- Para cada album: ve a djchedraui.bandcamp.com → álbum → Share/Embed → copia el iframe -->
-  <div class="release">
-    <div class="platform-label">Bandcamp</div>
     <iframe style="border:0;height:340px;"
       src="https://bandcamp.com/EmbeddedPlayer/album=TUNUMERO/size=large/bgcol=111111/linkcol=39ff14/artwork=small/transparent=true/"
       seamless>
     </iframe>
   </div>
 
-  <!-- Añade más releases aquí -->
+  <!-- SOUNDCLOUD — pega aquí cada embed de soundcloud.com/djchedraui -->
+  <div class="release">
+    <iframe height="300" scrolling="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/djchedraui&color=%2339ff14&auto_play=false&hide_related=true&show_comments=false&show_user=true&visual=true">
+    </iframe>
+  </div>
+
+  <!-- Añade más releases alternando Bandcamp y SoundCloud -->
 
 </div>
 </body>
