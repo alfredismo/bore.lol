@@ -1,0 +1,181 @@
+/* ============================================================
+   bore.lol — dark terminal pixel
+   paleta: fondo verdoso oscuro, verde terminal, acento ambar
+   headers: Press Start 2P / Silkscreen (pixel)
+   cuerpo: monoespaciada del sistema
+   ============================================================ */
+
+:root {
+  --bg: #0b0e0c;
+  --fg: #b8c4ba;
+  --dim: #4a554d;
+  --green: #3df58a;
+  --amber: #e0af68;
+  --line: #1c211e;
+  --pixel: "Press Start 2P", monospace;
+  --pixel-sm: "Silkscreen", monospace;
+  --mono: "SF Mono", "Cascadia Code", Menlo, Consolas, "Courier New", monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+::selection { background: var(--green); color: #000; }
+
+html { font-size: 16px; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--mono);
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 24px 0;
+  flex: 1;
+}
+
+/* ---------- header ---------- */
+header { margin-bottom: 40px; }
+
+.prompt {
+  color: var(--dim);
+  font-size: 0.85rem;
+  margin-bottom: 14px;
+  user-select: none;
+}
+.prompt .user { color: var(--green); }
+.prompt .path { color: var(--amber); }
+.prompt .cmd  { color: var(--fg); }
+
+h1 {
+  font-family: var(--pixel);
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+h1 a { color: var(--fg); text-decoration: none; }
+h1 a:hover { color: var(--green); }
+h1 a::after {
+  content: "\25AE"; /* cursor bloque */
+  font-family: var(--mono);
+  color: var(--green);
+  animation: blink 1.1s steps(1) infinite;
+  margin-left: 6px;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ---------- nav ---------- */
+nav { margin-bottom: 48px; }
+nav ul { list-style: none; }
+nav li { display: inline; margin-right: 18px; }
+
+nav a {
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+nav a::before { content: "["; color: var(--dim); }
+nav a::after  { content: "]"; color: var(--dim); }
+nav a:hover { color: var(--green); }
+nav a:hover::before,
+nav a:hover::after { color: var(--green); }
+
+nav a.ext { color: var(--dim); }
+nav a.ext:hover { color: var(--amber); }
+nav a.ext:hover::before,
+nav a.ext:hover::after { color: var(--amber); }
+
+/* ---------- contenido ---------- */
+main section { margin-bottom: 44px; }
+
+h2 {
+  font-family: var(--pixel-sm);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--green);
+  text-transform: lowercase;
+  margin-bottom: 16px;
+  user-select: none;
+}
+h2::before { content: "## "; color: var(--dim); }
+
+.entry {
+  display: block;
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 2px 0;
+}
+.entry .date {
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin-right: 12px;
+}
+.entry:hover { color: var(--green); }
+.entry:hover .date { color: var(--dim); }
+.entry::before { content: "\2192  "; color: transparent; }
+.entry:hover::before { color: var(--green); }
+
+p.bio {
+  font-size: 0.95rem;
+  max-width: 52ch;
+}
+p.bio em { color: var(--green); font-style: normal; }
+
+/* ---------- posts y paginas ---------- */
+article.post { margin-bottom: 40px; }
+.post-date {
+  color: var(--dim);
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+main p { margin-bottom: 1em; max-width: 62ch; }
+main a { color: var(--green); }
+main a:hover { background: var(--green); color: #000; text-decoration: none; }
+main ul, main ol { margin: 0 0 1em 1.4em; }
+main img { max-width: 100%; height: auto; border: 1px solid var(--line); }
+main h3 {
+  font-family: var(--pixel-sm);
+  font-size: 0.9rem;
+  color: var(--amber);
+  margin: 24px 0 12px;
+}
+main code {
+  background: var(--line);
+  padding: 1px 6px;
+  font-size: 0.9em;
+}
+main pre {
+  background: var(--line);
+  padding: 14px;
+  overflow-x: auto;
+  margin-bottom: 1em;
+}
+main pre code { background: none; padding: 0; }
+
+/* ---------- footer ---------- */
+footer {
+  border-top: 1px solid var(--line);
+  padding: 20px 24px 28px;
+  max-width: 640px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--dim);
+}
+footer a { color: var(--dim); text-decoration: none; }
+footer a:hover { color: var(--green); background: none; }
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.1rem; }
+  nav li { display: block; margin: 4px 0; }
+}
