@@ -1,181 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bore.lol</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Special+Gothic+Expanded+One&family=Oswald:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            background: #000;
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-        }
-
-        .wrapper {
-            width: 100%;
-            max-width: 680px;
-            padding: 60px 24px 40px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* LOGO TEXTO - se oculta si hay PNG */
-        .logo-text a {
-            font-family: 'Jacquarda Bastarda 9', serif;
-            font-size: 16rem;
-            color: #00ff00;
-            text-decoration: none;
-            line-height: 0.9;
-            display: block;
-            margin-bottom: 28px;
-        }
-
-        /* LOGO PNG - descomentar cuando tengas el archivo */
-        /*
-        .logo-img {
-            margin-bottom: 28px;
-        }
-        .logo-img img {
-            max-width: 320px;
-            width: 100%;
-            height: auto;
-        }
-        */
-
-        /* MENÚ VERTICAL */
-        nav {
-            display: flex;
-            flex-direction: column;
-            gap: 0px;
-            margin-bottom: 40px;
-        }
-
-        nav a {
-            font-family: 'Special Gothic Expanded One', sans-serif;
-            font-size: 2.8rem;
-            color: #ccc;
-            text-decoration: none;
-            line-height: 1.25;
-            transition: color 0.15s;
-        }
-
-        nav a:hover { color: #00ff00; }
-
-        /* CONTENIDO */
-        .content { width: 100%; flex: 1; }
-
-        /* TÍTULO POST */
-        h1 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 2.6rem;
-            font-weight: 600;
-            color: #00ff00;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 6px;
-            line-height: 1.1;
-        }
-
-        h2, h3 {
-            font-family: 'Oswald', sans-serif;
-            color: #00ff00;
-            text-transform: uppercase;
-            margin: 28px 0 10px;
-        }
-
-        /* CUERPO */
-        p, li {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.05rem;
-            color: #ddd;
-            line-height: 1.9;
-            margin-bottom: 18px;
-        }
-
-        blockquote {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            color: #aaa;
-            border-left: 3px solid #00ff00;
-            padding-left: 18px;
-            margin: 20px 0;
-            line-height: 1.8;
-        }
-
-        .post-date {
-            font-family: 'Special Gothic Expanded One', sans-serif;
-            color: #444;
-            font-size: 0.8rem;
-            margin-bottom: 30px;
-            display: block;
-        }
-
-        code, pre {
-            font-family: 'Courier New', monospace;
-            background: #0a0a0a;
-            color: #00ff00;
-            padding: 2px 7px;
-            border-radius: 3px;
-            font-size: 0.88rem;
-        }
-
-        a { color: #00ff00; }
-        a:hover { text-decoration: underline; }
-
-        footer {
-            margin-top: 60px;
-            color: #333;
-            font-size: 0.7rem;
-            font-family: 'Special Gothic Expanded One', sans-serif;
-            letter-spacing: 2px;
-        }
-
-        @media (max-width: 600px) {
-            .logo-text a { font-size: 8rem; }
-            nav a { font-size: 1.8rem; }
-            h1 { font-size: 1.8rem; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title | default: "bore.lol" }}</title>
+<meta name="description" content="{{ site.description | default: 'memes, musica y diseno desde mexico' }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/terminal.css' | relative_url }}">
 </head>
 <body>
-    <div class="wrapper">
 
-        <!-- LOGO TEXTO (quitar cuando tengas PNG) -->
-        <div class="logo-text"><a href="/">bore</a></div>
+<div class="wrap">
 
-        <!-- LOGO PNG (descomentar y subir logo.png al repo) -->
-        <!--
-        <div class="logo-img">
-            <a href="/"><img src="/logo.png" alt=""></a>
-        </div>
-        -->
+  <header>
+    <div class="prompt"><span class="user">bore@bore.lol</span>:<span class="path">~</span>$ <span class="cmd">./bore.exe</span></div>
+    <h1><a href="{{ '/' | relative_url }}">BORE</a></h1>
+  </header>
 
-        <nav>
-            
-            <a href="/about">About</a>
-            <a href="/blog">Blog</a>
-            <a href="/design">Design</a>
-            <a href="/music">DJ Chedraui</a>
-            <a href="https://puromexa.tumblr.com">Meme Museum</a>
-            <a href="https://x.com/boreuno">X</a>
-            <a href="https://instagram.com/boreuno">Instagram</a>           
-            <a href="https://linktr.ee/boreuno">Links</a>
-     
-        </nav>
+  <nav>
+    <ul>
+      <li><a href="{{ '/about/' | relative_url }}">about</a></li>
+      <li><a href="{{ '/blog/' | relative_url }}">blog</a></li>
+      <li><a href="{{ '/music/' | relative_url }}">music</a></li>
+      <li><a href="{{ '/design/' | relative_url }}">design</a></li>
+      <li><a href="{{ site.meme_museum_url | default: 'https://alfredismo.github.io/memes/' }}">meme museum</a></li>
+      <li><a class="ext" href="{{ site.x_url | default: 'https://x.com/' }}">x</a></li>
+      <li><a class="ext" href="{{ site.instagram_url | default: 'https://instagram.com/' }}">instagram</a></li>
+    </ul>
+  </nav>
 
-        <div class="content">
-            {{ content }}
-        </div>
+  <main>
+    {{ content }}
+  </main>
 
-                <footer>MEMES THE DNA OF THE SOUL</footer>
+</div>
 
-    </div>
+<footer>
+  <span>bore.lol</span>
+  <span><a href="#">↑ top</a></span>
+</footer>
+
 </body>
 </html>
