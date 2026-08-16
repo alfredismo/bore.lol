@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section>
-  <p class="bio">memes, música y diseño desde méxico. un sitio hecho a mano, <em>actualizado solo cuando hay algo que decir</em>.</p>
+  <p class="bio">alfredo, bore(d), mem(explorer), artist. <em>mememancer</em>.</p>
 </section>
 
 <section>
