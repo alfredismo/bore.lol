@@ -1,7 +1,7 @@
 /* ============================================================
    bore.lol — dark terminal pixel
-   paleta: fondo verdoso oscuro, verde terminal, acento ambar
-   headers: Press Start 2P / Silkscreen (pixel)
+   pixel font principal: Bitcount Single (Google Fonts)
+   headers secundarios: Silkscreen
    cuerpo: monoespaciada del sistema
    ============================================================ */
 
@@ -12,7 +12,7 @@
   --green: #3df58a;
   --amber: #e0af68;
   --line: #1c211e;
-  --pixel: "Press Start 2P", monospace;
+  --pixel: "Bitcount Single", monospace;
   --pixel-sm: "Silkscreen", monospace;
   --mono: "SF Mono", "Cascadia Code", Menlo, Consolas, "Courier New", monospace;
 }
@@ -56,9 +56,9 @@ header { margin-bottom: 40px; }
 
 h1 {
   font-family: var(--pixel);
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: normal;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 h1 a { color: var(--fg); text-decoration: none; }
 h1 a:hover { color: var(--green); }
@@ -71,15 +71,15 @@ h1 a::after {
 }
 @keyframes blink { 50% { opacity: 0; } }
 
-/* ---------- nav ---------- */
+/* ---------- nav (x3) ---------- */
 nav { margin-bottom: 48px; }
-nav ul { list-style: none; }
-nav li { display: inline; margin-right: 18px; }
+nav ul { list-style: none; line-height: 1.25; }
+nav li { display: inline; margin-right: 26px; }
 
 nav a {
   color: var(--fg);
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 2.85rem; /* x3 del tamaño base */
 }
 nav a::before { content: "["; color: var(--dim); }
 nav a::after  { content: "]"; color: var(--dim); }
@@ -129,6 +129,22 @@ p.bio {
 }
 p.bio em { color: var(--green); font-style: normal; }
 
+/* ---------- galeria (design) ---------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+.gallery a { display: block; }
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  display: block;
+}
+.gallery a:hover img { border-color: var(--green); }
+
 /* ---------- posts y paginas ---------- */
 article.post { margin-bottom: 40px; }
 .post-date {
@@ -176,6 +192,7 @@ footer a { color: var(--dim); text-decoration: none; }
 footer a:hover { color: var(--green); background: none; }
 
 @media (max-width: 480px) {
-  h1 { font-size: 1.1rem; }
-  nav li { display: block; margin: 4px 0; }
+  h1 { font-size: 1.6rem; }
+  nav li { display: block; margin: 10px 0; }
+  nav a { font-size: 2.2rem; }
 }
