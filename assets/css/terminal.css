@@ -1,8 +1,7 @@
 /* ============================================================
    bore.lol — dark terminal pixel
-   pixel font principal: Bitcount Single (Google Fonts)
-   headers secundarios: Silkscreen
-   cuerpo: monoespaciada del sistema
+   pixel font: Bitcount Single (titulo, h2, h3)
+   cuerpo y nav: monoespaciada typewriter retrofuturista
    ============================================================ */
 
 :root {
@@ -13,7 +12,6 @@
   --amber: #e0af68;
   --line: #1c211e;
   --pixel: "Bitcount Single", monospace;
-  --pixel-sm: "Silkscreen", monospace;
   --mono: "SF Mono", "Cascadia Code", Menlo, Consolas, "Courier New", monospace;
 }
 
@@ -63,7 +61,7 @@ h1 {
 h1 a { color: var(--fg); text-decoration: none; }
 h1 a:hover { color: var(--green); }
 h1 a::after {
-  content: "\25AE"; /* cursor bloque */
+  content: "\25AE";
   font-family: var(--mono);
   color: var(--green);
   animation: blink 1.1s steps(1) infinite;
@@ -71,15 +69,15 @@ h1 a::after {
 }
 @keyframes blink { 50% { opacity: 0; } }
 
-/* ---------- nav (x3) ---------- */
+/* ---------- nav (typewriter, tamano moderado) ---------- */
 nav { margin-bottom: 48px; }
-nav ul { list-style: none; line-height: 1.25; }
-nav li { display: inline; margin-right: 26px; }
+nav ul { list-style: none; line-height: 1.5; }
+nav li { display: inline; margin-right: 20px; }
 
 nav a {
   color: var(--fg);
   text-decoration: none;
-  font-size: 2.85rem; /* x3 del tamaño base */
+  font-size: 1.4rem;
 }
 nav a::before { content: "["; color: var(--dim); }
 nav a::after  { content: "]"; color: var(--dim); }
@@ -96,9 +94,9 @@ nav a.ext:hover::after { color: var(--amber); }
 main section { margin-bottom: 44px; }
 
 h2 {
-  font-family: var(--pixel-sm);
-  font-size: 1rem;
-  font-weight: 700;
+  font-family: var(--pixel);
+  font-size: 1.25rem;
+  font-weight: normal;
   color: var(--green);
   text-transform: lowercase;
   margin-bottom: 16px;
@@ -158,8 +156,9 @@ main a:hover { background: var(--green); color: #000; text-decoration: none; }
 main ul, main ol { margin: 0 0 1em 1.4em; }
 main img { max-width: 100%; height: auto; border: 1px solid var(--line); }
 main h3 {
-  font-family: var(--pixel-sm);
-  font-size: 0.9rem;
+  font-family: var(--pixel);
+  font-size: 1.05rem;
+  font-weight: normal;
   color: var(--amber);
   margin: 24px 0 12px;
 }
@@ -193,6 +192,6 @@ footer a:hover { color: var(--green); background: none; }
 
 @media (max-width: 480px) {
   h1 { font-size: 1.6rem; }
-  nav li { display: block; margin: 10px 0; }
-  nav a { font-size: 2.2rem; }
+  nav li { display: block; margin: 6px 0; }
+  nav a { font-size: 1.25rem; }
 }
