@@ -1,8 +1,9 @@
 /* ============================================================
-   bore.lol — hacker terminal
+   bore.lol — hacker terminal + scanlines
    pixel font: Bitcount Single (titulo, h2, h3)
    cuerpo: monoespaciada typewriter
    colores: verde neON #00ff41 sobre negro
+   efecto: scanlines CRT
    ============================================================ */
 
 :root {
@@ -30,6 +31,23 @@ body {
   text-shadow: 0 0 3px var(--fg);
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+/* Scanlines effect */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 999;
 }
 
 .wrap {
@@ -38,6 +56,8 @@ body {
   margin: 0 auto;
   padding: 48px 24px;
   flex: 1;
+  position: relative;
+  z-index: 1;
 }
 
 /* ---------- header ---------- */
@@ -54,7 +74,7 @@ header { margin-bottom: 48px; border-bottom: 1px solid var(--dim); padding-botto
 
 h1 {
   font-family: var(--pixel);
-  font-size: 56px;
+  font-size: clamp(56px, 10vw, 112px);
   font-weight: normal;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -86,7 +106,7 @@ nav a:hover {
   text-decoration: none;
   text-shadow: none;
 }
-nav a.ext { color: var(--accent); }
+nav a.ext { color: var(--fg); }
 
 /* ---------- contenido ---------- */
 main section { margin-bottom: 56px; }
@@ -178,7 +198,7 @@ footer a { color: var(--dim); text-decoration: none; }
 footer a:hover { color: var(--accent); }
 
 @media (max-width: 480px) {
-  h1 { font-size: 36px; }
+  h1 { font-size: 56px; }
   nav ul { gap: 20px; }
   nav a { font-size: 14px; }
 }

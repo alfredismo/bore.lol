@@ -15,7 +15,5 @@ layout: default
 
 <section>
   <h2>links</h2>
-  <a class="entry" href="https://github.com/alfredismo">github</a>
-  <a class="entry" href="https://x.com/boreuno">x</a>
-  <a class="entry" href="https://instagram.com/boreuno">instagram</a>
+  <a class="entry" href="https://linktr.ee/boreuno">linktr.ee/boreuno</a>
 </section>
