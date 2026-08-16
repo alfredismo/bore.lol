@@ -12,8 +12,3 @@ layout: default
   <a class="entry" href="{{ post.url | relative_url }}"><span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>{{ post.title | downcase }}</a>
   {% endfor %}
 </section>
-
-<section>
-  <h2>links</h2>
-  <a class="entry" href="https://linktr.ee/boreuno">linktr.ee/boreuno</a>
-</section>
