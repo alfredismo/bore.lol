@@ -4,28 +4,44 @@ title: DJ CHEDRAUI
 ---
 
 <section>
-<h2>perfil</h2>
-<p><strong>DJ CHEDRAUI</strong> es productor, DJ y fundador de <strong>Futurable</strong> (netlabel de bass music desde Xalapa, Veracruz). Su sonido mezcla techno, corridos, dembow y rap cholo. Reconocido por su <strong>Boiler Room Mexico City (2017)</strong> y por fusionar cultura club con visuales del México contemporaneo.</p>
+<h2>origen</h2>
+<p><strong>DJ CHEDRAUI</strong> es un proyecto en el que la música de club, la memetica y la sátira cultural mexicana se fusionan de forma deliberada. Surgido en <strong>Xalapa, Veracruz</strong>, alrededor de <strong>2016</strong>, el personaje se construye a partir de un elemento visual recurrente: una <strong>bolsa de plástico azul</strong> de la cadena Chedraui que oculta el rostro. Este gesto transforma un objeto de consumo masivo en máscara, logo y dispositivo memetico. A través de él se articula una identidad anOnima que opera simultaneamente en la pista y en el flujo digital, resignificando el eslogan <strong>“cuesta menos”</strong> como declaracion estetica.</p>
 </section>
 
 <section>
-<h2>lanzamientos</h2>
+<h2>discografia</h2>
+<p>La discografia, distribuida principalmente via <strong>Bandcamp</strong> y el sello <strong>Futurable</strong>, incluye lanzamientos clave como:</p>
 <ul>
-<li><strong>MEXICO LINDO BANDIDO</strong> (2025) — 19 tracks, manifiesto sonoro.</li>
-<li><strong>BAILE DEL DURO 2</strong> (2024) — REY DE LA MOTA, PURA MORRA HIGH, LA CULPA, QUARZO.</li>
-<li><strong>EL GÉ¬NERO URBANO EP</strong> (2018) — PODER JUDICIAL, OPERATIVA SAN JUAN, TANGUITA DE TIANGUIS.</li>
-<li><strong>BAILE ACELERADO</strong> (2022) — single emblematico.</li>
+<li><strong>Footwork Choncho Vol. 1 y Vol. 2</strong> (2016)</li>
+<li><strong>Mexico Lindo Bandido</strong> (2016)</li>
+<li><strong>Baile del Duro</strong> (2020)</li>
+<li><strong>Baile del Duro 2</strong> (2024)</li>
+<li><strong>Ahora Todos Mis Haters Quieren Llamarse DJ Shitcoin Vol. 03</strong> (2022)</li>
+<li><strong>CHATGPT BLENDS</strong> (2024)</li>
+<li><strong>Musica para la Generacion Brainrot</strong> (2026)</li>
 </ul>
+<p>Estos trabajos trazan una evolucion desde el juke y footwork ancestral con referencias al folklore y al chamanismo hacia fusiones contemporaneas de <strong>techno, corridos tumbados, dembow, jungle</strong> y produccion asistida por <strong>inteligencia artificial</strong>.</p>
 </section>
 
 <section>
-<h2>shows</h2>
+<h2>escena</h2>
+<p>Entre 2016 y 2026, DJ CHEDRAUI ha mantenido una presencia escenica selectiva pero significativa:</p>
 <ul>
-<li><strong>Boiler Room Mexico City</strong> (2017)</li>
-<li><strong>Termi Online x Futurable</strong> (2020)</li>
-<li><strong>Salon Tuntun</strong> (2024)</li>
-<li><strong>Mini Rave @ Drama Radio Bar</strong> (2025)</li>
+<li><strong>2017</strong> — seleccionado para la primera sesion de <strong>footwork/juke latinoamericano de Boiler Room</strong> en Ciudad de Mexico, representando a <strong>Juke Mx</strong>. Hito que consolido su proyeccion internacional dentro de la escena experimental.</li>
+<li><strong>2020</strong> — set completo para <strong>Termi Online</strong> en colaboracion con Futurable.</li>
+<li><strong>2024–2026</strong> — actividad en vivo concentrada en noches locales de alta intensidad como las series <strong>Baile del Duro</strong> y eventos asociados a <strong>BabyRatta</strong> en Ciudad de Mexico. Espacios donde el personaje se presenta de forma irregular pero consistente dentro de circuitos de <strong>hard Latino, noise y club experimental</strong>.</li>
 </ul>
+<p>La presencia escenica se caracteriza por la misma logica memetica que define los lanzamientos: la bolsa azul, la irreverencia y la reconfiguracion de codigos culturales mexicanos contemporaneos.</p>
+</section>
+
+<section>
+<h2>memetica</h2>
+<p>El proyecto utiliza la <strong>memetica</strong> como herramienta central de desarrollo del personaje. Cada lanzamiento, titulo, portada y aparicion funciona como nodo de un sistema narrativo mas amplio, en el que la sátira, el <strong>brainrot</strong> y la cultura digital se convierten en materia prima compositiva. El resultado es una practica que no distingue entre música, imagen y transmision cultural.</p>
+</section>
+
+<section>
+<h2>proximo</h2>
+<p><strong>“Musica Pirata”</strong> dentro de la <strong>“CRISIS DE SPAMNTANILOVERSE”</strong></p>
 </section>
 
 <section>
