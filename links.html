@@ -1,44 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>links — {{ site.title | default: "bore.lol" }}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Bitcount+Single:CRSV,ELSH,ELXP,slnt,wght@0,0,0,0,400&family=Datatype:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ '/assets/css/terminal.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/links.css' | relative_url }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links — bore.lol</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+      background: #000;
+    }
+
+    body {
+      color: #00ff41;
+      font-family: "Share Tech Mono", "Courier New", monospace;
+    }
+
+    main {
+      width: min(100% - 40px, 524px);
+      margin: 0 auto;
+      padding: 42px 0 48px;
+      text-align: center;
+    }
+
+    .links-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .link-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 66px;
+      padding: 16px 44px;
+      border: 1px solid #fff;
+      border-radius: 999px;
+      background: transparent;
+      color: #00ff41;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+      line-height: 1.2;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-shadow: 0 0 5px rgba(0, 255, 65, 0.7);
+      transition: 150ms ease;
+    }
+
+    .link-button:hover,
+    .link-button:focus-visible {
+      background: #00ff41;
+      border-color: #00ff41;
+      color: #000;
+      outline: none;
+      text-shadow: none;
+      transform: scale(1.015);
+    }
+
+    h2 {
+      margin: 34px 0 16px;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        width: min(100% - 40px, 524px);
+        padding-top: 28px;
+      }
+
+      .link-button {
+        min-height: 64px;
+        font-size: 15px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="wrap">
-<main class="links-page">
-  <!-- Reemplaza avatar.jpg por tu avatar definitivo cuando lo subas a assets/img/ -->
-  <section class="links-profile">
-    <img class="links-avatar" src="{{ '/assets/img/imagenesreales.jpg' | relative_url }}" alt="avatar de boreuno">
-    <div class="links-name">@boreuno</div>
-    <div class="links-socials">
-      <!-- Edita estos enlaces manualmente -->
-      <a href="#" aria-label="sitio web">◎</a>
-      <a href="#" aria-label="email">✉</a>
-    </div>
-  </section>
+  <main>
+    <section class="links-list">
+      <!-- Sustituye # por el enlace real -->
+      <a class="link-button" href="#">Meme Stock</a>
+      <a class="link-button" href="#">Tumblr</a>
+      <a class="link-button" href="#">OBJKT</a>
+    </section>
 
-  <!-- Edita href="#" con las URLs reales -->
-  <div class="links-list">
-    <a class="links-button" href="#">meme stock</a>
-    <a class="links-button" href="#">tumblr</a>
-    <a class="links-button" href="#">objkt</a>
-  </div>
+    <h2>Other Projects</h2>
 
-  <h2 class="links-heading">other projects</h2>
-  <div class="links-list">
-    <a class="links-button" href="#">futurable</a>
-    <a class="links-button" href="#">vision—futuro</a>
-    <a class="links-button" href="#">ruidofino_co-founder [2008–2014]</a>
-    <a class="links-button" href="#">hiphoprevol | [2006–2010]</a>
-  </div>
-</main>
-</div>
+    <section class="links-list">
+      <!-- Sustituye # por el enlace real -->
+      <a class="link-button" href="#">Futurable</a>
+      <a class="link-button" href="#">Vision—Futuro</a>
+      <a class="link-button" href="#">Ruidofino—Co-Founder [2008–2014]</a>
+      <a class="link-button" href="#">Hiphoprevol | [2006–2010]</a>
+    </section>
+  </main>
 </body>
 </html>
