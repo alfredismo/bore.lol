@@ -7,7 +7,7 @@
   --line: #003300;
   --pixel: "Bitcount Single", monospace;
   --display: "BBH Bogle", "Arial Black", sans-serif;
-  --mono: "SF Mono", "Cascadia Code", Menlo, Consolas, "Courier New", monospace;
+  --mono: "Space Mono", monospace;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 ::selection { background: var(--white); color: #000; }
