@@ -79,8 +79,9 @@ title: links
 <h2>NFT</h2>
    <div class="links-list">
     <a class="link-button" href="https://objkt.com/users/tz1gYNfSKyUA4GdfP5utpsodUAo76qmPJHve/created">OBJKT</a>
-    <a class="link-button" href="https://superrare.com/boreuno">superrare</a
-
+    <a class="link-button" href="https://superrare.com/boreuno">superrare</a>
+     
+   </div>
   <h2>Other Projects</h2>
 
   <div class="links-list">
