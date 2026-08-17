@@ -11,26 +11,87 @@
 <link rel="stylesheet" href="{{ '/assets/css/terminal.css' | relative_url }}">
 {% if page.url == '/links/' %}
 <style>
-  body.links-route header,
-  body.links-route nav,
-  body.links-route footer {
-    display: none !important;
+  body.links-route .wrap {
+    width: min(100% - 32px, 900px);
+    margin: 0 auto;
+    padding-top: 14px;
   }
 
-  body.links-route .wrap {
-    width: 100%;
-    max-width: none;
+  body.links-route header {
+    margin-bottom: 10px;
+  }
+
+  body.links-route header .prompt {
+    display: none;
+  }
+
+  body.links-route header h1 {
+    margin: 0;
+    font-size: clamp(2.2rem, 9vw, 4.5rem);
+    line-height: .9;
+  }
+
+  body.links-route nav {
+    margin: 12px 0 26px;
+    padding: 0 0 12px;
+    overflow-x: auto;
+    border-top: 1px solid var(--dim, #126b2b);
+    border-bottom: 1px solid var(--dim, #126b2b);
+    scrollbar-width: thin;
+  }
+
+  body.links-route nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    width: max-content;
+    min-width: 100%;
+    margin: 0;
+    padding: 12px 0 0;
+    list-style: none;
+  }
+
+  body.links-route nav li {
     margin: 0;
     padding: 0;
   }
 
+  body.links-route nav a {
+    display: block;
+    white-space: nowrap;
+    font-size: .85rem;
+    text-decoration: none;
+  }
+
   body.links-route main {
     margin: 0;
-    padding-top: 0;
+    padding: 0;
   }
 
   body.links-route .links-only {
-    padding-top: 28px;
+    padding-top: 0;
+  }
+
+  body.links-route footer {
+    display: none;
+  }
+
+  @media (max-width: 560px) {
+    body.links-route .wrap {
+      width: min(100% - 24px, 900px);
+    }
+
+    body.links-route nav {
+      margin-bottom: 18px;
+    }
+
+    body.links-route nav ul {
+      gap: 13px;
+    }
+
+    body.links-route nav a {
+      font-size: .76rem;
+    }
   }
 </style>
 {% endif %}
