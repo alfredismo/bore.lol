@@ -73,17 +73,22 @@ title: links
 
 <div class="links-only">
   <div class="links-list">
-    <a class="link-button" href="#">Meme Stock</a>
-    <a class="link-button" href="#">Tumblr</a>
-    <a class="link-button" href="#">OBJKT</a>
+    <a class="link-button" href="https://facebook.com/boreunostock">Meme Stock</a>
+   
   </div>
+<h2>NFT</h2>
+   <div class="links-list">
+    <a class="link-button" href="https://objkt.com/users/tz1gYNfSKyUA4GdfP5utpsodUAo76qmPJHve/created">OBJKT</a>
+    <a class="link-button" href="https://superrare.com/boreuno">superrare</a
 
   <h2>Other Projects</h2>
 
   <div class="links-list">
-    <a class="link-button" href="#">Futurable</a>
-    <a class="link-button" href="#">Vision—Futuro</a>
-    <a class="link-button" href="#">Ruidofino—Co-Founder [2008–2014]</a>
-    <a class="link-button" href="#">Hiphoprevol | [2006–2010]</a>
+    <a class="link-button" href="https://futurable.bandcamp.com">Futurable</a>
+    <a class="link-button" href="https://weedkonducta.bandcamp.com">Weed Konducta</a>
+    <a class="link-button" href="https://soundclound.com/newmemetic">140.85</a>
+    <a class="link-button" href="https://visionfuturo.tumblr.com">Vision—Futuro</a>
+    <a class="link-button" href="https://masruidofino.blogspot.com">Ruidofino—Co-Founder [2008–2014]</a>
+    <a class="link-button" href="https://hiphoprevolblog.blogspot.com">Hiphoprevol | [2006–2010]</a>
   </div>
 </div>
