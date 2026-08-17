@@ -2,13 +2,22 @@
 layout: default
 ---
 
-<section>
-  <p class="bio">alfredo, bore(d), mem(explorer), artist. <em>[better call memetic]</em></p>
+<link rel="stylesheet" href="{{ '/assets/css/mem-explorer.css' | relative_url }}">
+
+<section class="mem-explorer">
+  <div class="mem-explorer__header">
+    <h2>mem[explorer]</h2>
+    <span class="mem-explorer__label">weekly edit archive</span>
+  </div>
+
+  <a class="mem-explorer__week" href="{{ '/mem-explorer/sub_week001/' | relative_url }}">
+    <span>sub_week001</span>
+    <span>7 edits →</span>
+  </a>
 </section>
 
-<section>
-  <h2>blog</h2>
-  {% for post in site.posts limit:5 %}
-  <a class="entry" href="{{ post.url | relative_url }}"><span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>{{ post.title | downcase }}</a>
-  {% endfor %}
-</section>
+## blog
+
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url | relative_url }})
+{% endfor %}
