@@ -18,7 +18,7 @@
   }
 
   body.links-route header {
-    margin-bottom: 10px;
+    margin-bottom: 24px;
   }
 
   body.links-route header .prompt {
@@ -32,35 +32,7 @@
   }
 
   body.links-route nav {
-    margin: 12px 0 26px;
-    padding: 0 0 12px;
-    overflow-x: auto;
-    border-top: 1px solid var(--dim, #126b2b);
-    border-bottom: 1px solid var(--dim, #126b2b);
-    scrollbar-width: thin;
-  }
-
-  body.links-route nav ul {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 16px;
-    width: max-content;
-    min-width: 100%;
-    margin: 0;
-    padding: 12px 0 0;
-    list-style: none;
-  }
-
-  body.links-route nav li {
-    margin: 0;
-    padding: 0;
-  }
-
-  body.links-route nav a {
-    display: block;
-    white-space: nowrap;
-    font-size: .85rem;
-    text-decoration: none;
+    display: none;
   }
 
   body.links-route main {
@@ -79,18 +51,6 @@
   @media (max-width: 560px) {
     body.links-route .wrap {
       width: min(100% - 24px, 900px);
-    }
-
-    body.links-route nav {
-      margin-bottom: 18px;
-    }
-
-    body.links-route nav ul {
-      gap: 13px;
-    }
-
-    body.links-route nav a {
-      font-size: .76rem;
     }
   }
 </style>
