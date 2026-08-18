@@ -14,14 +14,33 @@ title: mem[explorer] — sub_week001
     <span class="mem-explorer__meta">sub_week001 · 7 edits</span>
   </div>
 
-  <!-- Reemplaza cada tarjeta por una imagen subida a assets/img/mem-explorer/sub_week001/ -->
   <div class="mem-grid">
-    <article class="mem-card mem-card--placeholder"><span class="mem-card__caption">edit_01<br><code>assets/img/mem-explorer/sub_week001/edit_01.jpg</code></span></article>
-    <article class="mem-card mem-card--placeholder"><span class="mem-card__caption">edit_02<br><code>assets/img/mem-explorer/sub_week001/edit_02.jpg</code></span></article>
-    <article class="mem-card mem-card--placeholder"><span class="mem-card__caption">edit_03<br><code>assets/img/mem-explorer/sub_week001/edit_03.jpg</code></span></article>
-    <article class="mem-card mem-card--placeholder"><span class="mem-card__caption">edit_04<br><code>assets/img/mem-explorer/sub_week001/edit_04.jpg</code></span></article>
-    <article class="mem-card mem-card--placeholder"><span class="mem-card__caption">edit_05<br><code>assets/img/mem-explorer/sub_week001/edit_05.jpg</code></span></article>
-    <article class="mem-card mem-card--placeholder"><span class="mem-card__caption">edit_06<br><code>assets/img/mem-explorer/sub_week001/edit_06.jpg</code></span></article>
-    <article class="mem-card mem-card--placeholder"><span class="mem-card__caption">edit_07<br><code>assets/img/mem-explorer/sub_week001/edit_07.jpg</code></span></article>
+    <article class="mem-card">
+      <img src="{{ '/assets/img/mem-explorer/sub_week001/better%20call%20memetic.jpg' | relative_url }}" alt="Better Call Memetic">
+      <span class="mem-card__caption">Better Call Memetic</span>
+    </article>
+    <article class="mem-card">
+      <img src="{{ '/assets/img/mem-explorer/sub_week001/back%20to%20the%20slopaganda.jpg' | relative_url }}" alt="Back to the Slopaganda">
+      <span class="mem-card__caption">Back to the Slopaganda</span>
+    </article>
+    <article class="mem-card">
+      <img src="{{ '/assets/img/mem-explorer/sub_week001/master%20of%20the%20slopaganda.jpg' | relative_url }}" alt="Master of the Slopaganda">
+      <span class="mem-card__caption">Master of the Slopaganda</span>
+    </article>
+    <article class="mem-card">
+      <img src="{{ '/assets/img/mem-explorer/sub_week001/slopbocop.jpg' | relative_url }}" alt="Slopbocop">
+      <span class="mem-card__caption">Slopbocop</span>
+    </article>
+    <article class="mem-card">
+      <img src="{{ '/assets/img/mem-explorer/sub_week001/slopaganda%20strikes%20back.jpg' | relative_url }}" alt="The Slopaganda Strikes Back">
+      <span class="mem-card__caption">The Slopaganda Strikes Back</span>
+    </article>
+    <article class="mem-card">
+      <img src="{{ '/assets/img/mem-explorer/sub_week001/the%20slopsons.png' | relative_url }}" alt="The Slopsons">
+      <span class="mem-card__caption">The Slopsons</span>
+    </article>
+    <article class="mem-card mem-card--placeholder">
+      <span class="mem-card__caption">Slopémon<br><code>pendiente de subir</code></span>
+    </article>
   </div>
 </section>
