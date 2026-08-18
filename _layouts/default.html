@@ -11,48 +11,14 @@
 <link rel="stylesheet" href="{{ '/assets/css/terminal.css' | relative_url }}">
 {% if page.url == '/links/' %}
 <style>
-  body.links-route .wrap {
-    width: min(100% - 32px, 900px);
-    margin: 0 auto;
-    padding-top: 14px;
-  }
-
-  body.links-route header {
-    margin-bottom: 24px;
-  }
-
-  body.links-route header .prompt {
-    display: none;
-  }
-
-  body.links-route header h1 {
-    margin: 0;
-    font-size: clamp(2.2rem, 9vw, 4.5rem);
-    line-height: .9;
-  }
-
-  body.links-route nav {
-    display: none;
-  }
-
-  body.links-route main {
-    margin: 0;
-    padding: 0;
-  }
-
-  body.links-route .links-only {
-    padding-top: 0;
-  }
-
-  body.links-route footer {
-    display: none;
-  }
-
-  @media (max-width: 560px) {
-    body.links-route .wrap {
-      width: min(100% - 24px, 900px);
-    }
-  }
+  body.links-route .wrap { width: min(100% - 32px, 900px); margin: 0 auto; padding-top: 14px; }
+  body.links-route header { margin-bottom: 24px; }
+  body.links-route header .prompt { display: none; }
+  body.links-route header h1 { margin: 0; font-size: clamp(2.2rem, 9vw, 4.5rem); line-height: .9; }
+  body.links-route nav { display: none; }
+  body.links-route main { margin: 0; padding: 0; }
+  body.links-route .links-only { padding-top: 0; }
+  body.links-route footer { display: none; }
 </style>
 {% endif %}
 </head>
@@ -77,5 +43,15 @@
 <main>{{ content }}</main>
 </div>
 <footer><span>bore.lol © 2026</span><span><a href="#">↑ top</a></span></footer>
+<script>
+(function () {
+  var nav = document.querySelector('body:not(.links-route) nav');
+  if (!nav) return;
+  var threshold = 120;
+  window.addEventListener('scroll', function () {
+    document.body.classList.toggle('nav-compact', window.scrollY > threshold);
+  }, { passive: true });
+})();
+</script>
 </body>
 </html>
