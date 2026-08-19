@@ -75,8 +75,9 @@
 .mem-carousel__slide img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: auto;
+  max-height: 72vh;
+  object-fit: contain;
 }
 
 .mem-carousel__slide--pending {
